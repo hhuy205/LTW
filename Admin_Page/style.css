@@ -1,0 +1,242 @@
+/* Loại bỏ nút tăng/giảm bên phải của input number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=file] {
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.logo img {
+    max-height: 59px;
+    height: auto;
+    width: auto;
+}
+
+.admin-dashboard {
+    /* display: flex; */
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    /* width: calc(100% - 200px); */
+    display: flex;
+    margin-left: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+aside {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    /* padding: 20px 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+aside nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+aside nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-cards .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 30%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+/* table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+} */
+
+table td button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table td button:hover {
+    background-color: #888;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 4px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination .page-number {
+    /* background-color: #0056b3;
+    color: white; */
+}
+
+.pagination .page-number:hover {
+    /* background-color: #00408a; */
+}
+
+.pagination .previous, .pagination .next {
+    background-color: #333;
+    color: white;
+}
+
+.pagination .previous:hover, .pagination .next:hover {
+    background-color: #555;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
